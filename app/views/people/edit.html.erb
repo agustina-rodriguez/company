@@ -1,0 +1,6 @@
+<h1><%= t('people.edit.title') %></h1>
+
+<%= render 'form', person: @person %>
+
+<%= link_to t('g.show'), @person, class: 'btn btn-sm btn-warning' %> |
+<%= link_to t('g.back'), people_path, class: 'btn btn-sm btn-secondary' %>

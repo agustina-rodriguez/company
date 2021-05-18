@@ -1,0 +1,8 @@
+<p id="notice"><%= notice %></p>
+
+<h3>
+  <strong><%= @department.name %></strong>
+</h3>
+
+<%= link_to t('g.edit'), edit_department_path(@department), class:'btn btn-sm btn-outline-primary' %>
+<%= link_to t('g.back'), departments_path, class:'btn btn-sm btn-outline-secondary' %>

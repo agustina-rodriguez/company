@@ -1,0 +1,21 @@
+es:
+  activerecord:
+    models:
+      person: "Persona"
+    attributes:
+      person:
+        first_name: "Nombre"
+        last_name: "Apellido"
+        document_number: "DNI"
+        gender: "Género"
+        birth_date: "Fecha de nacimiento"
+        age: "Edad"
+        department_id: "Departamento"
+        task_id: "Tarea"
+  people:
+    index:
+      title: "Listado de gente"
+    new:
+      title: "Nueva persona"
+    edit:
+      title: "Editando persona: %{first_name}"

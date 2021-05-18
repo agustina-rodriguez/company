@@ -1,0 +1,26 @@
+<p id="notice"><%= notice %></p>
+
+<h3><strong><%= @person.first_name %> <%= @person.last_name %></strong></h3>
+
+<p>
+  <strong>Document number:</strong>
+  <%= @person.document_number %>
+</p>
+
+<p>
+  <strong>Gender:</strong>
+  <%= @person.genero %>
+</p>
+
+<p>
+  <strong>Birth date:</strong>
+  <%= @person.birth_date %>
+</p>
+
+<p>
+  <strong>Department:</strong>
+  <%= @person.department.name %>
+</p>
+
+<%= link_to t('g.edit'), edit_person_path(@person), class:'btn btn-sm btn-primary' %> 
+<%= link_to t('g.back'), people_path, class:'btn btn-sm btn-secondary' %>

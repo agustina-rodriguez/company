@@ -1,0 +1,21 @@
+en:
+  activerecord:
+    models:
+      person: "Person"
+    attributes:
+      person:
+        first_name: "First name"
+        last_name: "Last name"
+        document_number: "Document Number"
+        gender: "Gender"
+        birth_date: "Birth date"
+        age: "Age"
+        department_id: "Department"
+        task_id: "Task"
+  people:
+    index:
+      title: "List of Employees"
+    new:
+      title: "New Employee"
+    edit:
+      title: "Editing Employee: %{first_name}"

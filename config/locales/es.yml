@@ -1,0 +1,21 @@
+es:
+  welcome: "Bienvenido, %{user}!"
+  # language_details: "Usted está navegando en español"
+  date:
+    formats:
+      default: "%d-%m-%Y"
+    order:
+      - day
+      - month
+      - year
+
+  g:
+    save: "Guardar"
+    show: "Mostrar"
+    edit: "Editar"
+    back: "Volver"
+    destroy: "Eliminar"
+    are_you_sure: "¿Está seguro?"
+    new_department: "Crear Departamento"
+    new_task: "Crear Tarea"
+    new_person: "Crear Empleado"

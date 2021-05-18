@@ -1,0 +1,14 @@
+en:
+  welcome: "Welcome, %{user}!"
+  # language_details: "Your are browsing in English"
+
+  g:
+    save: "Save"
+    show: "Show"
+    edit: "Edit"
+    back: "Back"
+    destroy: "Delete"
+    are_you_sure: "Are you sure?"
+    new_department: "Create Department"
+    new_task: "Create Task"
+    new_person: "Create Employee"

@@ -1,0 +1,35 @@
+<p id="notice"><%= notice %></p>
+
+<h3><%= t('departments.index.title')%></h3>
+
+<table class='table table-hover'>
+  <thead class="table-primary">
+    <tr>
+      <th><%=t('activerecord.attributes.department.name')%></th>
+      <th><%=t('activerecord.attributes.department.person_id')%></th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @departments.each do |department| %>
+      <tr>
+        <td><%= department.name %></td>
+        <td>
+          <% if department.people.count == 0 %>
+            <%= department.people.count %>
+          <% else %>
+            <%= link_to department.people.count, people_path(:department_id => department.id) %>
+          <% end %>
+        </td>
+        <td><%= link_to t('g.show'), department, class:'btn btn-sm btn-primary' %></td>
+        <td><%= link_to t('g.edit'), edit_department_path(department), class:'btn btn-sm btn-secondary' %></td>
+        <td><%= link_to t('g.destroy'), department, method: :delete, data: { confirm: t('g.are_you_sure') }, class: 'btn btn-sm btn-danger' %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to t('g.new_department'), new_department_path, class:'btn btn-sm btn-success' %>

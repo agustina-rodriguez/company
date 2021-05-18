@@ -1,0 +1,18 @@
+en:
+  activerecord:
+    models:
+      task: "Task"
+    attributes:
+      task:
+        assignament_date: "Assignament date"
+        finish_date: "Finish date"
+        description: "Description"
+        state: "Status"
+        person_id: "Employee"
+  tasks:
+    index:
+      title: "List of Tasks"
+    new:
+      title: "New Task"
+    edit:
+      title: "Editing Task"

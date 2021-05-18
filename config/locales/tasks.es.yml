@@ -1,0 +1,18 @@
+es:
+  activerecord:
+    models:
+      task: "Tarea"
+    attributes:
+      task:
+        assignament_date: "Fecha de asignación"
+        finish_date: "Fecha de finalización"
+        description: "Descripción"
+        state: "Estado"
+        person_id: "Empleado"
+  tasks:
+    index:
+      title: "Lista de tareas"
+    new:
+      title: "Nueva tarea"
+    edit:
+      title: "Editando Tarea"

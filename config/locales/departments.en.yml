@@ -1,0 +1,15 @@
+en:
+  activerecord:
+    models:
+      department: "Department"
+    attributes:
+      department:
+        name: "Name"
+        person_id: "Employee"
+  departments:
+    index:
+      title: "List of Departments"
+    new:
+      title: "New Department"
+    edit:
+      title: "Editing Department: %{name}"
