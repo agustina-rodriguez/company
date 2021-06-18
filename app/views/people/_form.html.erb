@@ -26,9 +26,17 @@
     <%= form.number_field :document_number %>
   </div>
 
+  <!-- <div class="field"> -->
+    <%# <%= form.label :gender %>
+    <%# <%= form.number_field :gender %>
+  <!-- </div> -->
+
   <div class="field">
     <%= form.label :gender %>
-    <%= form.number_field :gender %>
+    <select name="person[gender]">
+      <option value="1">Masculino</option>
+      <option value="2">Femenino</option>
+    </select>
   </div>
 
   <div class="field">

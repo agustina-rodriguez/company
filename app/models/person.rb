@@ -20,8 +20,4 @@ class Person < ApplicationRecord
   def age
     Time.now.year - birth_date.year
   end
-
-  # def birth_date
-    # I18n.t('date.birth_date')
-  # end
 end

@@ -1,6 +1,14 @@
 en:
-  welcome: "Welcome, %{user}!"
+  welcome: "Welcome, %{employee}!"
   # language_details: "Your are browsing in English"
+  date:
+    formats:
+      default: "%Y-%m-%d"
+    month_names: [~, January, February, March, April, May, June, July, August, September, October, November, December]
+    order:
+      - year
+      - month
+      - day
 
   g:
     save: "Save"
@@ -12,3 +20,8 @@ en:
     new_department: "Create Department"
     new_task: "Create Task"
     new_person: "Create Employee"
+    log_in: "Log In"
+    log_out: "Log Out"
+    edit_profile: "Edit Profile"
+    cancel_account: "Cancel Account"
+    update: "Update"

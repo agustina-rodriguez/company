@@ -1,11 +1,11 @@
 <p id="notice"><%= notice %></p>
 
-<h3>People</h3>
+<h3><%=t('.title')%></h3>
 
 <form class="form-control me-2" action="/people" method="GET">
   Búsqueda por nombre o apellido:
   <input type="text" name="filter" value="" />
-  <input class="btn btn-outline-success" type="submit"/>
+  <input class="btn btn-sm btn-outline-success" type="submit"/>
 </form><br>
 
 <form class="form-control me-2" method="GET" action="/people" >
@@ -14,13 +14,14 @@
     <option value="1">Masculino</option>
     <option value="2">Femenino</option>
   </select>
+  <input class="btn btn-sm btn-outline-success" type="submit"/>
   <select name="department_id">
     <option value="">Seleccione departamento</option>
     <%= Department.all.each do | d | %>
     <option value="<%= d.id %>"> <%= d.name %> </option>
     <% end %>
     </select>
-    <input class="btn btn-outline-success" type="submit"/>
+    <input class="btn btn-sm btn-outline-success" type="submit"/>
 </form><br>
 
 <%# ES LO MISMO LO QUE HIZO EL PROFE Y LO QUE HICE YO %>

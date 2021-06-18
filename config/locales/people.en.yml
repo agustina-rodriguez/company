@@ -18,4 +18,4 @@ en:
     new:
       title: "New Employee"
     edit:
-      title: "Editing Employee: %{first_name}"
+      title: "Editing Employee: %{first_name} %{last_name}"

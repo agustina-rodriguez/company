@@ -1,4 +1,6 @@
 class PeopleController < ApplicationController
+  before_action :authenticate_user!
+  load_and_authorize_resource
   before_action :set_person, only: %i[ show edit update destroy ]
 
   # GET /people or /people.json

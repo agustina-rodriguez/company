@@ -1,9 +1,10 @@
 es:
-  welcome: "Bienvenido, %{user}!"
+  welcome: "Bienvenido, %{employee}!"
   # language_details: "Usted está navegando en español"
   date:
     formats:
       default: "%d-%m-%Y"
+    month_names: [~, Enero, Febrero, Marzo, Abril, Mayo, Junio, Julio, Agosto, Septiembre, Octubre, Noviembre, Diciembre]
     order:
       - day
       - month
@@ -19,3 +20,8 @@ es:
     new_department: "Crear Departamento"
     new_task: "Crear Tarea"
     new_person: "Crear Empleado"
+    log_in: "Iniciar Sesión"
+    log_out: "Cerrar Sesión"
+    edit_profile: "Editar Perfil"
+    cancel_account: "Cancelar Cuenta"
+    update: "Actualizar"

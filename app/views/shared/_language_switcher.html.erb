@@ -1,0 +1,7 @@
+<% if I18n.locale == I18n.default_locale %>
+  <%# <%= t("language_details") %>
+  <%= link_to "Change to English", { :locale=>'en' }, class: 'btn btn-sm btn-secondary-warning' %>
+<% else %>
+   <%# <%= t("language_details") %>
+   <%= link_to "Cambiar a Español", { :locale=>'es' }, class: 'btn btn-sm btn-secondary-warning' %>
+<% end %>

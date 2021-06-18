@@ -6,9 +6,22 @@
     </button>
     <div class="collapse navbar-collapse show" id="navbarNavAltMarkup">
       <div class="navbar-nav">
-        <a class="nav-link" href="/departments">Departamentos</a>
-        <a class="nav-link" href="/people">Empleados</a>
-        <a class="nav-link" href="/tasks">Tareas</a>
+        <a> <%= link_to "Departamentos", departments_url, class: 'nav-link' if can? :show, Department %> </a>
+        <a> <%= link_to "Empleados", people_url, class: 'nav-link' if can? :index, Person %> </a>
+        <a> <%= link_to "Tareas", tasks_url, class: 'nav-link' if can? :manage, Task %> </a>
+        <a href="/administrators">HOLAAAAA ADMINISTRADORES</a>
+        <a>
+          <%#= link_to "Administradores", administrators_url, class: 'nav-link' if can? :index, :administrator %>
+        </a>
+        <!-- <a class="nav-link">
+          <%# if user_signed_in? %>
+            <%#= link_to "Tareas", tasks_url, class:'nav-link' %>
+          <%# else %>
+            <%#= link_to "Tareas", "#", class: 'nav-link disabled' %>
+          <%# end %>
+        </a>
+        -->
+        <%= render 'shared/user_menu' %>
       </div>
     </div>
   </div>

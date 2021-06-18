@@ -14,8 +14,8 @@ es:
         task_id: "Tarea"
   people:
     index:
-      title: "Listado de gente"
+      title: "Lista de empleados"
     new:
-      title: "Nueva persona"
+      title: "Nuevo Empleado"
     edit:
-      title: "Editando persona: %{first_name}"
+      title: "Editando Empleado: %{first_name} %{last_name}"
